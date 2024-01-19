@@ -23,7 +23,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 18px 40px;
-  box-shadow: 0 0.1rem 0.5rem #ccc;
+  box-shadow: 0 0.1rem 0.3rem #ccc;
   width: 100%;
   background: var(--white);
   transition: all 0.5s;
@@ -65,11 +65,43 @@ body {
   font-size: 1.2rem;
 }
 
+.nav__menu i {
+  cursor: pointer;
+  transition: all .1s ease;
+}
+.nav__menu i:hover {
+  scale: 1.1;
+  color: #33a55f;
+}
+
 .logo {
   transition: scale .3s ease-in-out;
 }
 .logo:hover {
   scale: 1.05;  
+}
+
+.menu-shoes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+  background: whitesmoke;
+  border: 1px #ccc solid;
+  border-radius: 12px;
+}
+
+.menu__links ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  
+}
+.menu__links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
 }
 
 .menu {
@@ -100,6 +132,17 @@ body {
   padding: 0 10%;
 }
 
+.about__img {
+  width: 50%;
+  height: 500px;
+  overflow: hidden;
+}
+.about__img img {
+  max-width: 100%;  
+  height: auto;
+  display: block;
+}
+
 .home__img img {
   max-width: 100%;
   height: auto;
@@ -112,7 +155,6 @@ body {
   width: 50%;
   height: 500px;
   overflow: hidden;
-  z-index: 0;
 }
 
 .home__img img:hover {
@@ -240,8 +282,9 @@ body {
 .footer__rights {
   text-align: center;
   padding: .75rem;
-  box-shadow: 0 -6px 10px #ccc;
+  box-shadow: 0 -.2rem .3rem #ccc;
   position: fixed;
   bottom: 0;
   width: 100%;
+  z-index: 1;
 }
